@@ -1,0 +1,13 @@
+def name():
+    print("Name Josphat Nkole")  
+name()
+def email():
+    print("email nkolejosphat@gmail.com")
+email ()
+def username ():
+    print("slack username Josphatnkole")
+username()
+def biostack():
+    print("biostack genomics and microbiology")
+
+biostack()
