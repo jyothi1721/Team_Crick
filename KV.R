@@ -1,6 +1,3 @@
 #This is task 1
 #We were asked to present a script that printed our name, email ID, our Slack username(with @), and our biostack
-print("Name: Aditya")
-print("Email ID: aditya112000@gmail.com")
-print("Slack ID: @KV")
-print("Biostack: Transcriptomics")
+print("Aditya, aditya112000@gmail.com, @KV, Transcriptomics")
