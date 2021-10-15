@@ -1,7 +1,0 @@
-#include <iostream>
-using namespace std;
-int main()
-{
-    cout << "NAME: Yash Banabakode\nE-MAIL: banabakodeyash78@gmail.com\nSLACK USERNAME: @yash11\nBIOSTACK: Genomic and drug discovery\n";
-    return 0;
-}
