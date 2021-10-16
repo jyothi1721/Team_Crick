@@ -13,4 +13,11 @@ listsh=()
 
 #To avoid the bash script meant for csv creating being executedfor i in $list1;do	if [ $i != "einstein_Hackbio.sh" ]	then		chmod +x $i		listsh+=( $i )	fi;done touch einstein_Hackbio.csv
 for i in $list1;
+do
+        if [ $i != "einstein_Hackbio.sh" ]
+        then
+                 chmod +x $i
+                 listsh+=( $i )
+        fi;
+done
 
