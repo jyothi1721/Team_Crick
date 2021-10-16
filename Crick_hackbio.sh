@@ -25,7 +25,7 @@ touch Crick_hackbio.csv
 
 #Executing files
 for f in *.py;do python "$f">>Crick_hackbio.csv;done
-for f in *.c;do out1=${f:0:-2}
+for f in *.C;do out1=${f:0:-2}
 		gcc $f -o $out1
 		./$out1 >>Crick_hackbio.csv;done
 for f in $listsh;do ./"$f">>Crick_hackbio.csv;done
@@ -33,4 +33,6 @@ wget https://cran.r-project.org/src/contrib/DescTools_0.99.42.tar.gz
 R CMD INSTALL --no-lock DescTools_0.99.42.tar.gz
 for f in *.R;do Rscript "$f">>Crick_hackbio.csv;done
 for f in *.js;do node "$f">>Crick_hackbio.csv;done
+for f in *.C++;do clang -o $out1 $f
+                  ./$out1>>Crick_hackbio.csv
 echo "Completed succesfully"
