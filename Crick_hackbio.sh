@@ -8,7 +8,6 @@ echo ' ' >>Team_Crick.csv;
 echo ' ' >>Team_Crick.csv;
 echo 'Name, Email, Slack_Username, Biostack' >>Team_Crick.csv;
 
-
 #generating the csv files
 
 for FILE1 in Team_Crick/Jyothi*;do gcc $FILE1 -o $FILE1.txt; ./$FILE1.txt >>Team_Crick.csv; done;
