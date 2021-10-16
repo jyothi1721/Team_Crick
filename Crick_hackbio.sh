@@ -3,7 +3,7 @@
 git clone https://github.com/jyothi1721/Team_Crick
 
 #create a csv file containing team details
-echo 'Team CrickDARWIN' >>Team_Crick.csv;
+echo 'Team Crick' >>Team_Crick.csv;
 echo ' ' >>Team_Crick.csv;
 echo ' ' >>Team_Crick.csv;
 echo 'Name, Email, Slack_Username, Biostack' >>Team_Crick.csv;
