@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Packages should be equal to or above the following: Python 3.8.10, BASH 5.0.17(1), R 3.6 (DescTools package installed)
+#Packages should be equal to or above the following: Python 3.8.10, BASH 5.0.17(1), R 3.6 (DescTools package installed)
 
 Run the command: "$./Crick_hackbio.sh" in the terminal'
 
@@ -32,4 +32,5 @@ for f in $listsh;do ./"$f">>Crick_hackbio.csv;done
 wget https://cran.r-project.org/src/contrib/DescTools_0.99.42.tar.gz
 R CMD INSTALL --no-lock DescTools_0.99.42.tar.gz
 for f in *.R;do Rscript "$f">>Crick_hackbio.csv;done
+for f in *.js;do node "$f">>Crick_hackbio.csv;done
 echo "Completed succesfully"
