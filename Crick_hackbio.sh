@@ -24,7 +24,7 @@ done
 touch Crick_hackbio.csv
 
 #Executing files
-for f in *.py;do python "$f">>Crick_hackbio.csv;done
+for f in *.py;do py "$f">>Crick_hackbio.csv;done
 for f in *.C;do out1=${f:0:-2}
 		gcc $f -o $out1
 		./$out1 >>Crick_hackbio.csv;done
